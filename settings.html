@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drai - Settings</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="left-nav">
+        <br>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="transfer.html">Transfer</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a class="active" href="settings.html">Settings</a></li>
+            <img src="drai.png" alt="drai-logo" width="200px" height="auto" style="padding-top: 400px;padding-left: 45px;">
+        </ul>
+    </div>
+    <div class="main-container" style="padding: 20px 20px 20px 20px;">
+        <div class="currency-wrapper">
+            <label for="currency">Currency: </label>
+                <select name="currency" id="currency" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    <option value="idr">IDR</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="sgd">SGD</option>
+                </select>
+        </div> <br>
+        <div class="dark-mode-wrapper">
+            <label for="dark-mode">Dark Mode: </label>
+                <input type="radio" name="dark-mode" oninput="darkMode()" checked>
+                <label for="dark-mode">Light</label>
+                <input type="radio" name="dark-mode" oninput="darkMode()">
+                <label for="dark-mode">Dark</label>
+                <script>
+                function darkMode() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+                </script>
+        </div> <br>
+        <div class="language-wrapper">
+            <label for="language">Language: </label>
+            <select name="language" id="language" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <option value="eng">English</option>
+                <option value="spn">Spanish</option>
+                <option value="ind">Bahasa Indonesia</option>
+                <option value="chi">Chinese</option>
+            </select>
+        </div> <br>
+        <div class="delete-button-wrapper">
+            <a href="deleted.html">
+                <button id="delete-button">Delete Account</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

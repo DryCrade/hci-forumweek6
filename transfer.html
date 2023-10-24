@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drai - Transfer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="left-nav">
+        <br>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a class="active" href="transfer.html">Transfer</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <img src="drai.png" alt="drai-logo" width="200px" height="auto" style="padding-top: 400px;padding-left: 45px;">
+        </ul>
+    </div>
+    <div class="transfer">
+        <div class="main-container" style="padding: 20px 20px 20px 20px;">
+            <label for="nominal" id="howmuch" style="text-align: center;">How much do you want to transfer?</label> <br><br>
+            <input type="number" name="nominal" id="nominal" placeholder="Rp.100,000" size="48px" style="background-color: #0074ffcc;color: white;" required> <br><br><br>
+            <label for="whom" style="font-size: 36px;">To whom?</label> 
+            <div class="transferlist-container">   
+                <form action="success.html">
+                    <input type="radio" id="xian" name="transfer-button" required>
+                    <label for="xian">Xian</label><br>
+                    <input type="radio" id="nadine" name="transfer-button" required>
+                    <label for="nadine">Nadine</label><br>
+                    <input type="radio" id="viona" name="transfer-button" required>
+                    <label for="viona">Viona</label><br>
+                    <input type="radio" id="edward" name="transfer-button" required>
+                    <label for="edward">Edward</label><br><br>
+                    <input type="submit">
+                </form>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
